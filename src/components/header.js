@@ -29,6 +29,7 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
   </header>
+  
 )
 
 Header.propTypes = {
