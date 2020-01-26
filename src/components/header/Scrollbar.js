@@ -4,25 +4,13 @@ import styled from 'styled-components'
 
 const Bar = styled.div`
     width: 1px;
-    height: 250px;
-    background-color: black;
-`
-
-const Handle = styled.div`
-    background-color: red;
-    width: 17px;
-    height: 12px;
-    border-radius: 50%;
-
-    position: relative;
-    top: 100%;
-    right: 8px;
+    height: 300px;
+    background-color: #707070;
 `
 
 const Scrollbar = props => {
     return (
         <div>
-            <Handle />
             <Bar />
          </div>
     )
@@ -32,4 +20,8 @@ Scrollbar.propTypes = {
 
 }
 
+
+// 6644322/0100
+
+// 5231001000
 export default Scrollbar

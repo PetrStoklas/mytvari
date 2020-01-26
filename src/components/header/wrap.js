@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export default styled.header`
-    border: 1px black solid;
-    width: 50px;
+
+    width: 45px;
     height: 100%;
     position: absolute;
     right: 0;
