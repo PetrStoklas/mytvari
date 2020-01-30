@@ -1,10 +1,9 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export default styled.header`
-
-    width: 45px;
-    height: 100%;
-    position: absolute;
+    ${({ width }) => width && css`width: ${width}px;`}
+    height: 100vh;
+    position: fixed;
     right: 0;
 
     display: flex;
