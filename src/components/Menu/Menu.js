@@ -1,8 +1,18 @@
+import React from 'react'
 import styled from 'styled-components'
-import MenuIcon from '../../images/menu2.png'
 
-export default styled.img.attrs({
-    src: MenuIcon
-})`
-    width: 50px;
+const Circle =  styled.div`
+    width: 8px;
+    height: 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 5px 0;
 `
+
+export default () => (
+    <div>
+        <Circle />
+        <Circle />
+        <Circle />
+    </div>
+)
