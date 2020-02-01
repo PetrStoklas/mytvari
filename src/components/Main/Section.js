@@ -10,7 +10,7 @@ const Section = ({ text, imgSrc }) => {
             backgroundColor: 'white',
             height: 'calc(100% + 2px)', 
         }}>
-            <h2>Grafika</h2>
+            <h2 style={{ fontFamily: 'Helvetica Neue' }}>grafika</h2>
             <div style={{
                 width: '60%',
                 margin: 'auto'
@@ -19,6 +19,7 @@ const Section = ({ text, imgSrc }) => {
             </div>
             <br />
             <p style={{
+                fontFamily: 'Helvetica Neue',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
                 margin: 'auto'
