@@ -1,18 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react'
+import MenuContent from './MenuContent'
+import MenuButton from './MenuButton'
 
-const Circle =  styled.div`
-    width: 8px;
-    height: 8px;
-    border: 1px solid black;
-    border-radius: 8px;
-    margin: 5px 0;
-`
 
-export default () => (
-    <div>
-        <Circle />
-        <Circle />
-        <Circle />
-    </div>
-)
+export default () => {
+    const [ open, setOpen ] = useState(false)
+ 
+    return (
+        <div>
+            <MenuContent open={open} />
+            <MenuButton onClick={() => setOpen(!open)} />
+        </div>
+)}
