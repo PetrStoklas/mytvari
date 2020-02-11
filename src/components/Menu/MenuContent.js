@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import MenuContentItem from './MenuContentItem'
+
+// TODO: make color constant
 
 const MenuBackground = styled.div`
     position: absolute;
-    background-color: darkgray;
+    background-color: rgb(105, 105, 105);
     bottom: 0;
     right: 0;
     width: 100vw;
@@ -38,13 +41,34 @@ const MenuBackground = styled.div`
     
 `
 
+const menuConfig = [
+    {
+        "title": "start",
+        "linkTo": "/start"
+    },
+    {
+        "title": "pro tisk",
+        "linkTo": "/prints"
+    },
+    {
+        "title": "něco na sebe",
+        "linkTo": "/clothes"
+    },
+    {
+        "title": "o nás",
+        "linkTo": "about"
+    }
+]
+
 const MenuContent = ({ open }) => {
     return (
         <MenuBackground open={open}>
-            grafika
-            foto
-            weby a aplikace
-            nabytek
+            {menuConfig.map(item => (
+                <MenuContentItem
+                    title={item.title}
+                    linkTo={item.linkTo}
+                />
+            ))}
         </MenuBackground>
     )
 }

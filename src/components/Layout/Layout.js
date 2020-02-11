@@ -28,9 +28,8 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div style={{ padding: '5px', paddingRight: '0', marginRight: `${constants.bodyToMenu}px` }}>
-        <FlexWrap direction="column">
+        <FlexWrap direction="column" align="center">
           {children}
-          
         </FlexWrap>
       </div>
     </>
