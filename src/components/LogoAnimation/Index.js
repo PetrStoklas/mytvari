@@ -43,7 +43,7 @@ const Picture = styled.img`
 const Index = () => {
     
     setTimeout(() => {
-        if (typeof window !== `undefined`) window.location.replace(`/home`)
+        if (typeof window !== `undefined`) window.location.replace(`/start`)
     }, 2700)
 
     return (
