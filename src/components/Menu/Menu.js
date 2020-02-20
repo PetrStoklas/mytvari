@@ -9,6 +9,6 @@ export default () => {
     return (
         <div>
             <MenuContent open={open} />
-            <MenuButton onClick={() => setOpen(!open)} />
+            <MenuButton onClick={() => setOpen(!open)} open={open} />
         </div>
 )}
