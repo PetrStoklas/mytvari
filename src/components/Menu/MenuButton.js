@@ -24,7 +24,6 @@ const Wrap = styled.div`
     height: 70px;
     position: relative;
     z-index: 2;
-    left: -20px;
 `
 
 export default ({open, ...props}) => {

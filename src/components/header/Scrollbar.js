@@ -6,6 +6,7 @@ const Bar = styled.div`
     width: 1px;
     height: 300px;
     background-color: #707070;
+    margin-right: 10px;
 `
 
 const Scrollbar = props => {
