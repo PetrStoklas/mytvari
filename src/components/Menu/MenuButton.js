@@ -6,33 +6,30 @@ const Circle =  styled.div`
     height: 8px;
     border: 1px solid black;
     border-radius: 8px;
-    // margin: 5px;
-    position: absolute;
+    margin: 5px;
+    position: relative;
+    z-index: 5;
     right: .5vw;
-    bottom: 10px;
+    bottom: 0;
     transition: bottom 1s;
-    ${props => props.first && css`
-        bottom: 50px;
-  `}
-    ${props => props.second && css`
-        bottom: 30px;
-  `}
+    left: 25%;
+    bottom: -10%;
     ${props => props.drop && css`
-        bottom: -40px
+        bottom: -150%
   `}
 `
 
 const Wrap = styled.div`
-    position: absolute;
-    bottom: 30px;
-    right: 13px;
-    width: 30px;
+    width: 50px;
     height: 70px;
+    position: relative;
+    z-index: 2;
+    left: -20px;
 `
 
 export default ({open, ...props}) => {
     return (
-        <Wrap {...props}>
+        <Wrap {...props} opened={open}>
             <Circle first/>
             <Circle second/>
             <Circle drop={open}/>

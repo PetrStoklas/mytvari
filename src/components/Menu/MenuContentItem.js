@@ -9,9 +9,9 @@ const Title = styled.p`
     font-size: 2.5em;
     font-family: 'Helvetica Neue';
     text-decoration: none;
+    transition: color .5s linear;
     /* margin-top: auto;
     margin-bottom: auto; */
-    transition: color .5s linear;
     /* transition: font-size 1.5s linear;
     transition: margin-top 1.5s linear;
     transition: margin-bottom 1.5s linear; */

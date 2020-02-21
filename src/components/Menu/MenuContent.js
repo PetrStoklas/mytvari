@@ -7,6 +7,7 @@ import MenuContentItem from './MenuContentItem'
 
 const MenuBackground = styled.div`
     position: absolute;
+    z-index: 0;
     background-color: rgb(105, 105, 105);
     bottom: 0;
     right: 0;
