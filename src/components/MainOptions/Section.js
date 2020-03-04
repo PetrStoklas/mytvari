@@ -18,12 +18,12 @@ const StyledSectionWrap = styled.div`
 
     &:hover {
         border-color: black;
-        max-width: 600px;
+        max-width: 530px;
         position: relative;
         z-index: 5;
         box-shadow: 3px 2px 20px -6px rgba(0,0,0,0.75);
-        font-size: 1.2em;
-        margin: -3% 5%;
+        font-size: 1.09em;
+        margin: 2% 5%;
     }
 `
 
