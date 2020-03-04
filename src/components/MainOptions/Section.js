@@ -5,11 +5,26 @@ import styled from 'styled-components'
 
 const StyledSectionWrap = styled.div`
     padding: 5%;
-    padding-right: 0;
-    border-radius: 0 15px 0 0;
+    margin: 5% 5%;
+    border-radius: 5px;
+    border: 1px solid;
     background-color: white;
+    border-color: lightgray;
     height: calc(100% + 2px);
     max-width: 500px;
+    box-shadow: 3px 2px 20px -6px rgba(0,0,0,0);
+    font-size: 1em;
+    transition: box-shadow .5s, max-width .5s, font-size .5s, margin .5s, border-color .5s;
+
+    &:hover {
+        border-color: black;
+        max-width: 600px;
+        position: relative;
+        z-index: 5;
+        box-shadow: 3px 2px 20px -6px rgba(0,0,0,0.75);
+        font-size: 1.2em;
+        margin: -3% 5%;
+    }
 `
 
 const ImgWrap = styled.div`
@@ -21,7 +36,6 @@ const StyledParagraph = styled.p`
     font-family: 'Helvetica Neue';
     text-align: justify;
     text-justify: inter-word;
-    margin: auto;
 `
 
 const Section = ({ header, text, imgSrc, linkTo, right }) => {
@@ -36,7 +50,7 @@ const Section = ({ header, text, imgSrc, linkTo, right }) => {
                 )}
                 <br />
                 {text && <StyledParagraph>{text}</StyledParagraph>}
-            </StyledSectionWrap>
+                </StyledSectionWrap>
         </StyledLink>
     )
 }
