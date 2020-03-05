@@ -38,10 +38,13 @@ const StyledParagraph = styled.p`
     text-justify: inter-word;
 `
 
-const Section = ({ header, text, imgSrc, linkTo, right }) => {
+const Section = ({ header, text, imgSrc, linkTo, right, setDim }) => {
     return (
-        <StyledLink to={linkTo}>
-            <StyledSectionWrap>
+        <StyledLink to={linkTo} >
+            <StyledSectionWrap 
+                onMouseEnter={() => setDim(true)}
+                onMouseLeave={() => setDim(false)}
+            >
                 <h2 style={{ fontFamily: 'Helvetica Neue' }}>{header}</h2>
                 {imgSrc && (
                     <ImgWrap>
@@ -61,11 +64,12 @@ Section.propTypes = {
     header: PropTypes.string.isRequired,
     imgSrc: PropTypes.node.isRequired,
     linkTo: PropTypes.string.isRequired,
+    dimBackground: PropTypes.func.isRequired,
 }
 
 Section.defaultProps = {
     right: false,
-    text: ''
+    text: '',
 }
 
 export default Section

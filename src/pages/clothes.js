@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from "../components/Layout/Layout"
 
-const clothes = props => {
+const clothes = ({ setDim }) => {
+    console.log(setDim)
     return (
         <Layout>
             <div>
